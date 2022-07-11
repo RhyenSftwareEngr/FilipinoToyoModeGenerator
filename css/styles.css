@@ -32,16 +32,21 @@ main * {
     backdrop-filter: brightness(.6);
 }
 
-#password-input input {
+input {
     border-right: 0 !important;
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
 
-#password-input button {
+button {
     border-left: 0 !important;
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
+    margin: 5px;
+}
+
+.border {
+    height: 200px;
 }
 
 
