@@ -19,13 +19,18 @@ function generateRandNum(num) {
     return Math.floor(Math.random() * num);
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
 
-    copyBtn.addEventListener('click', function() {
-        navigator.clipboard
-            .writeText(document.getElementById('para').innerText)
-            .then(
-                success => console.log("text copied"), err => console.log("error copying text")
-            );
-    });
+//     copyBtn.addEventListener('click', function() {
+//         navigator.clipboard
+//             .writeText(document.getElementById('para').innerText)
+//             .then(
+//                 success => console.log("text copied"), err => console.log("error copying text")
+//             );
+//     });
+// });
+copyBtn.addEventListener("click", async function(event) {
+    const content = document.getElementById('para').innerText;
+    await navigator.clipboard.writeText(content);
+    alert(await navigator.clipboard.readText());
 });
