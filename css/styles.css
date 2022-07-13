@@ -7,6 +7,7 @@ body {
 body {
     background-image: url('https://c.tenor.com/lv1TL-hduMUAAAAM/sound-sound-waves.gif');
     /* background-image: url(./../image/bg.jpg); */
+    /* background-color: #fcde67; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -24,8 +25,14 @@ main * {
     font-family: Comic Sans MS;
 }
 
+h1 {
+    color: red;
+    font-weight: bolder;
+}
+
 .card {
     background-image: url('https://thumbs.gfycat.com/ComplexEuphoricBurro-max-1mb.gif');
+    /* background-color: #5bccf6; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -46,7 +53,8 @@ button {
 }
 
 .border {
-    height: 200px;
+    /* height: 200px; */
+    background-color: #3B0040;
 }
 
 
