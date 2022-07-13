@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navigator.clipboard
             .writeText(document.getElementById('para').innerText)
             .then(
-                success => alert("text copied: PWEDE MO NA AWAYIN JOWA MO ULIT😁😁"), err => console.log("error copying text")
+                success => console.log("text copied"), err => console.log("error copying text")
             );
     });
 });
